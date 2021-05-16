@@ -1,0 +1,56 @@
+/*#Напишите стили для кнопки, которая может иметь несколько состояний: active, disabled, danger. Цвета произвольные.*/
+button{
+    width: 300px;
+    height: 100px;
+    margin: 50px;
+    padding: 15px;
+    border: 5px;
+    text-align: center;
+    border-radius: 3px;
+    transition: 0.2s
+
+}
+p.active{
+    font-size:20px; 
+    color: white;
+    text-decoration: none;
+}
+p.disabled{
+    font-size:20px; 
+    color: rgb(69, 74, 76);
+    text-decoration: none;
+}
+p.danger{
+    font-size:20px; 
+    color: rgb(36, 35, 35);
+    text-decoration: none;
+}
+button.active{
+    background-color: rgb(48, 172, 221);
+    box-shadow: 0 -3px rgb(36, 128, 165) inset;
+}
+button.active:hover{ 
+    background: rgb(15, 143, 194);
+}
+button.active:active{
+    background: rgb(18, 172, 233);
+    box-shadow: 0 3px rgb(27, 155, 206) inset;
+}
+
+button.disabled{
+    background-color: rgb(136, 148, 153);
+    box-shadow: 0 -3px rgb(102, 110, 114) inset;
+}
+
+
+button.danger{
+    background-color: rgb(172, 42, 10);
+    box-shadow: 0 -3px rgb(119, 49, 31) inset;
+}
+button.danger:hover{ 
+    background: rgb(199, 53, 16);
+}
+button.danger:active{
+    background: rgb(238, 66, 23);
+    box-shadow: 0 3px rgb(189, 61, 29) inset;
+}

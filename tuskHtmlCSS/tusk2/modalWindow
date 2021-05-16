@@ -1,0 +1,33 @@
+#Опишите все известные вам способы позиционирования модального окна, по центру экрана.
+
+-Инлайн блоки
+
+.fixed-overlay__modal {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.fixed-overlay__modal::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+}
+
+.modal {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal_container {
+    margin: 50px;
+    padding: 20px;
+    min-width: 200px;
+    text-align: left;
+    white-space: normal;
+    background-color: #fff;    
+    color: #000;
+}
+
+-modal Bootstrap  c опцией размеров , с их позиционированием по центру.
